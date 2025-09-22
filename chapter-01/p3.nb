@@ -1,0 +1,27 @@
+(i calculate Hessian Matrix by gradient)
+
+ClearAll;
+f = 10*(x2 - x1^2)^2 - (1 - x1)^2
+vars = {x1, x2};
+g = Grad[f, vars];
+h = D[g, {vars}]
+
+(ii calculate Hessian Matrix directly)
+ClearAll[x1, x2, g1, g2, gVec, Q, f, vars, gradF, hessF];
+
+g1[x1_, x2_] := (x1 - x2)^2 - x1^2 + x2^2;
+g2[x1_, x2_] := x1 + x2;
+
+gVec[x1_, x2_] := {g1[x1, x2], g2[x1, x2]};
+Q = {{2, 1}, {1, 4}};
+
+f[x1_, x2_] := gVec[x1, x2] . Q . gVec[x1, x2];
+vars = {x1, x2};
+
+gradF = Grad[f[x1, x2], vars] // Simplify // MatrixForm; 
+hessF = D[f[x1, x2], {vars, 2}] // Simplify // 
+   MatrixForm;  (*直接 Hessian*)
+
+gradF
+hessF
+
