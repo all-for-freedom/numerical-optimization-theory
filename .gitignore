@@ -1,0 +1,65 @@
+# --- macOS ---
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Visual Studio Code ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- C/C++ & Fortran ---
+build/
+build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+Testing/
+_deps/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.mod
+*.smod
+
+# --- MATLAB ---
+*.asv        # 自动保存文件
+*.mex*       # 编译后的 MEX
+*.mat
+
+# --- Wolfram / Mathematica ---
+*.mx
+*.mt
+*.wlt
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- IDEs ---
+.idea/
