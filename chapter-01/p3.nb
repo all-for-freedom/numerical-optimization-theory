@@ -1,5 +1,3 @@
-(i calculate Hessian Matrix by gradient)
-
 ClearAll;
 f = 10*(x2 - x1^2)^2 - (1 - x1)^2
 vars = {x1, x2};
@@ -24,4 +22,3 @@ hessF = D[f[x1, x2], {vars, 2}] // Simplify //
 
 gradF
 hessF
-
