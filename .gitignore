@@ -63,3 +63,6 @@ _deps/
 
 # --- IDEs ---
 .idea/
+
+# --- Others ---
+00_drafts/
