@@ -1,0 +1,1 @@
+Given two points on the two-dimensional plane, find a path to avoid all obstacles, so that the integral of the minimum distance from each point to the obstacle on the path is the smallest.

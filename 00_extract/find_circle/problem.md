@@ -1,0 +1,1 @@
+find the smallest circle in 2D plane to cover ten random points
