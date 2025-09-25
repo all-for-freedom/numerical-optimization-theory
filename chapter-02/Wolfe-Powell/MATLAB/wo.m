@@ -113,7 +113,7 @@ function alpha = wolfe_powell(x, d, f, grad_f, beta, rho, sigma1, rho1, sigma2)
 
         % the largest one becomes alpha_{i+1}
         alpha_i = current;
-        beta_up = alpha_i / rho;   
+        beta_up = alpha_i / rho;    
         guard = guard + 1;
     end
 
