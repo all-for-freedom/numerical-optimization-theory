@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-File:        find_way.py
+File:        find_way_origin.py
 Description: Fast Marching for K(x,y) = inf_{gamma} ∫ (1/d0) ds  on a binary grid
 
 Created on:  Thu Sep 25 2025 17:07:12
