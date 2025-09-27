@@ -31,8 +31,9 @@ while abs(grad_f(x)) > tol && iter < max_iter
     x  = x + aL * d;
 end
 
-fprintf("%.4f\n",x);
-fprintf("%.4f",f(x));
+fprintf("iter: %d\n",iter);
+fprintf("x: %.4f\n",x);
+fprintf("f(x): %.4f",f(x));
 
 function alpha = armijo(x, d, f, grad_f, beta, rho, sigma1)
     
